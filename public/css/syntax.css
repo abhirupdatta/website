@@ -1,0 +1,273 @@
+body {
+  color: #fff;
+  background-color: #002020;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #dfdfdf;
+}
+
+h4 {
+  color: #fff;
+}
+
+h7 {
+  color: #fff;
+  font-size: 2rem
+  }
+
+
+h6 {
+  color: #dfdfdf;
+  font-size: 1.5rem
+}
+
+h5 {
+  color: #d28445;
+  font-size: 2rem
+}
+
+hlt {
+  color: #d28445
+}
+
+bib {
+  color: #0ff
+}
+
+
+/* Quotes */
+blockquote {
+  color: #9a9a9a;
+}
+
+pre, code, pre code {
+  background-color: #555;
+  color: #fc0;
+}
+
+strong {
+  color: #f90;
+}
+
+large {
+  color: #dfdfdf;
+  font-size: 1.3rem
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #555;
+}
+
+
+@media (min-width: 48rem) {
+  .content {
+    max-width: 40rem;
+  }
+}
+
+.content {
+  padding-top:    2rem;
+  padding-bottom: 4rem;
+}
+
+/* Blog post or page title */
+.page-title,
+.post-title,
+.post-title a {
+  color: #d28445;
+  margin-top: 2rem;
+}
+
+/* Jekyll yellow */
+.theme-jekyll .sidebar {
+  background-color: #fc0;
+  color: rgba(0,0,0,.7);
+}
+.theme-jekyll .content a,
+.theme-jekyll .related-posts li a:hover {
+  color: #fc0;
+}
+.theme-jekyll .content a:hover {
+  color: #f90;
+}
+
+.sidebar {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #333;
+}
+
+/* About section */
+.sidebar-about h1 {
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.post-date {
+  color: #ddd;
+}
+
+.collapse {
+  display: none;
+}
+
+.button {
+    display: block;
+    height: 40px;
+    width: 100px;
+    background: none;
+    text-align: center;
+    padding: 5px;
+    border: #d28445;
+    text-decoration: none;
+    list-style:none;
+    margin: 10px 0px 10px 0px;
+}
+
+.button-monster {
+  display: block;
+  padding: 1rem;
+  margin: 2rem 0;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.theme-jekyll .content a.button-monster:hover {
+  background-color: #fc0;
+  color: #333;
+}
+
+.button-external {
+  display: block;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.theme-jekyll .content a.button-external:hover {
+  background-color: #fc0;
+  color: #333;
+}
+
+.theme-jekyll .content a.pagination-item:hover {
+  background-color: #fc0;
+  color: #333;
+}
+
+.step {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  float: right;
+  background-color: #fc0;
+  color: #333;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.img-nice {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  margin-top: 5rem;
+  color: #aaa;
+}
+
+.menu li {
+    display: inline;
+    position: relative;
+}
+.menu li:hover .sub-menu {
+    display: block;    
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+	width: 100%
+    top: 17px;
+    left: 0;
+}
+.sub-menu li {
+    display: block;
+}
+
+.FAQ { 
+    vertical-align: top; 
+    height:auto !important; 
+}
+.list {
+    display:none; 
+    height:auto;
+    margin:0;
+    float: left;
+}
+.show {
+    display: none; 
+}
+.hide:target + .show {
+    display: inline; 
+}
+.hide:target {
+    display: none; 
+}
+.hide:target ~ .list {
+    display:inline; 
+}
+
+/*style the (+) and (-) */
+.hide, .show {
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	font-size: 20px;
+	color: #fff;
+	text-shadow: 0 1px 0 #666;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 1px 1px 2px #000;
+	background: #cccbbb;
+	opacity: .95;
+	margin-right: 0;
+	float: left;
+	margin-bottom: 25px;
+}
+
+.hide:hover, .show:hover {
+	color: #eee;
+	text-shadow: 0 0 1px #666;
+	text-decoration: none;
+	box-shadow: 0 0 4px #222 inset;
+	opacity: 1;
+	margin-bottom: 25px;
+}
+
+.list p{
+    height:auto;
+    margin:0;
+}
+.question {
+	float: left;
+	height: auto;
+	width: 100%;
+	line-height: 20px;
+	padding-left: 20px;
+	margin-bottom: 25px;
+	font-style: italic;
+}
