@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.3.28)  17 NOV 2016 17:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.3.28)  29 NOV 2016 20:18
 entering extended mode
 **Abhirup_Datta_CV.tex
-("C:\Users\Abhirup\OneDrive for Business\webpage\CV\Abhirup_Datta_CV.tex"
+("C:\Users\Abhirup\OneDrive for Business\webpage_full\CV\Abhirup_Datta_CV.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("C:\Users\Abhirup\OneDrive for Business\webpage\CV\moderncv.cls"
+("C:\Users\Abhirup\OneDrive for Business\webpage_full\CV\moderncv.cls"
 Document Class: moderncv 2012/10/31 v1.2.0 modern curriculum vitae and letter d
 ocument class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
@@ -188,7 +188,8 @@ Package microtype Info: Loading configuration file microtype.cfg.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.cfg"
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
-("C:\Users\Abhirup\OneDrive for Business\webpage\CV\moderncvcompatibility.sty"
+("C:\Users\Abhirup\OneDrive for Business\webpage_full\CV\moderncvcompatibility.
+sty"
 Package: moderncvcompatibility 2012/10/31 v1.2.0 modern curriculum vitae and le
 tter compatibility patches
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\bigfoot\suffix.sty"
@@ -196,9 +197,9 @@ Package: suffix 2006/07/15 1.5a Variant command support
 )
 \bibindent=\skip54
 
-("C:\Users\Abhirup\OneDrive for Business\webpage\CV\tweaklist.sty"))
-("C:\Users\Abhirup\OneDrive for Business\webpage\CV\moderncvstyleclassicnew.sty
-"
+("C:\Users\Abhirup\OneDrive for Business\webpage_full\CV\tweaklist.sty"))
+("C:\Users\Abhirup\OneDrive for Business\webpage_full\CV\moderncvstyleclassicne
+w.sty"
 
 LaTeX Warning: You have requested package `moderncvstyleclassicnew',
                but the package provides `moderncvstyleclassic'.
@@ -221,11 +222,10 @@ LaTeX Font Info:    Try loading font information for U+mvs on input line 79.
 \cvitemwithcommentmainlength=\skip65
 \cvitemwithcommentcommentlength=\skip66
 )
-("C:\Users\Abhirup\OneDrive for Business\webpage\CV\moderncvcolorblue.sty"
+("C:\Users\Abhirup\OneDrive for Business\webpage_full\CV\moderncvcolorblue.sty"
 Package: moderncvcolorblue 2012/10/31 v1.2.0 modern curriculum vitae and letter
  color scheme: blue
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count89
 )
@@ -369,7 +369,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 60.
 
-("C:\Users\Abhirup\OneDrive for Business\webpage\CV\Abhirup_Datta_CV.aux")
+("C:\Users\Abhirup\OneDrive for Business\webpage_full\CV\Abhirup_Datta_CV.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
@@ -387,7 +387,6 @@ LaTeX Font Info:    ... okay on input line 60.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 60.
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -477,13 +476,12 @@ LaTeX Info: Redefining \ref on input line 60.
 LaTeX Info: Redefining \pageref on input line 60.
 LaTeX Info: Redefining \nameref on input line 60.
 
-("C:\Users\Abhirup\OneDrive for Business\webpage\CV\Abhirup_Datta_CV.out")
-("C:\Users\Abhirup\OneDrive for Business\webpage\CV\Abhirup_Datta_CV.out")
+("C:\Users\Abhirup\OneDrive for Business\webpage_full\CV\Abhirup_Datta_CV.out")
+("C:\Users\Abhirup\OneDrive for Business\webpage_full\CV\Abhirup_Datta_CV.out")
 \@outlinefile=\write3
 \pagenumberwidth=\skip68
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 60.
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-mvs.cfg"
 File: mt-mvs.cfg 2006/07/05 v1.1 microtype config. file: Marvosym Euro (RS)
 )
@@ -530,18 +528,18 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
  [5]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
 
-("C:\Users\Abhirup\OneDrive for Business\webpage\CV\Abhirup_Datta_CV.aux")
+("C:\Users\Abhirup\OneDrive for Business\webpage_full\CV\Abhirup_Datta_CV.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
 Package rerunfilecheck Info: File `Abhirup_Datta_CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12054 strings out of 493921
- 175348 string characters out of 3146474
+ 12056 strings out of 493921
+ 175477 string characters out of 3146474
  392793 words of memory out of 3000000
  15136 multiletter control sequences out of 15000+200000
- 60317 words of font info for 72 fonts, out of 3000000 for 9000
+ 60433 words of font info for 73 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  42i,13n,67p,782b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
@@ -551,7 +549,7 @@ ss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/lm/lmsso12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/marvosym/marvosym.pfb>
-Output written on Abhirup_Datta_CV.pdf (5 pages, 164706 bytes).
+Output written on Abhirup_Datta_CV.pdf (5 pages, 164566 bytes).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)
