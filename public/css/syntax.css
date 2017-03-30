@@ -6,8 +6,12 @@ body {
 }
 
 /* Headings */
-h1, h2, h3 {
+h1, h2 {
   color: #dfdfdf;
+}
+
+h3 {
+  color: #fff;
 }
 
 h4 {
@@ -16,9 +20,8 @@ h4 {
 
 h7 {
   color: #fff;
-  font-size: 2rem
+  font-size: 1.5rem
   }
-
 
 h6 {
   color: #dfdfdf;
@@ -262,6 +265,13 @@ tbody tr:nth-child(odd) th {
     height:auto;
     margin:0;
 }
+
+.list p.italic {
+	height:auto;
+    margin:0;
+    font-style: italic;
+}
+
 .question {
 	float: left;
 	height: auto;
