@@ -35,6 +35,11 @@ h5 {
   font-size: 2rem
 }
 
+h8 {
+  color: #1d6f99;
+  font-size: 1.3rem
+}
+
 hlt {
   font-weight: bold;
   color: #000
@@ -259,6 +264,26 @@ tbody tr:nth-child(odd) th {
 	float: left;
 	margin-bottom: 25px;
 }
+
+    table {
+        border-collapse: collapse;
+        margin:100px auto;
+    }
+    
+    td {
+        margin: 0px;
+        padding: 5px;
+        text-align: left;
+        border:1px solid #080808;
+    }
+    
+    .border {
+        border: 1px solid #080808;
+    }
+
+    .noborders td {
+        border:0;
+    }
 
 .hide:hover, .show:hover {
 	color: #eee;
