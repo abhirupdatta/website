@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  29 AUG 2017 19:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  7 DEC 2017 14:13
 entering extended mode
 **./Abhirup_Datta_CV.tex
 (Abhirup_Datta_CV.tex
@@ -518,40 +518,41 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 75.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 92.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 94.
+ [1
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 100--100
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 104--104
 [][] [] 
  []
 
-[1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 112--112
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 118--118
 [][] [] 
  []
 
 [2]
-Underfull \hbox (badness 2293) in paragraph at lines 147--147
+Underfull \hbox (badness 2293) in paragraph at lines 159--159
 []\T1/lmss/m/n/12 (+20) ASA Out-stand-ing Sta-tis-ti-cal Ap-pli-ca-tion Award, 
 \T1/lmss/m/sl/12 Amer-i-can Sta-tis-ti-cal
  []
 
 [3] [4]
-Underfull \hbox (badness 1436) in paragraph at lines 257--257
+Underfull \hbox (badness 1436) in paragraph at lines 279--279
 []\T1/lmss/m/n/12 (+20) Bayesian Mod-els for High Di-men-sional Spa-tial Data, 
 \T1/lmss/m/sl/12 De-part-ment of
  []
 
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 292.
 [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 335.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 317.
  [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 335.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 365.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 365.
  (Abhirup_Datta_CV.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 335.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 335.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 365.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 365.
 Package rerunfilecheck Info: File `Abhirup_Datta_CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  )
@@ -560,25 +561,27 @@ Package rerunfilecheck Info: File `Abhirup_Datta_CV.out' has not changed.
 ### simple group (level 1) entered at line 62 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 12212 strings out of 493323
- 177710 string characters out of 3139078
+ 12221 strings out of 493323
+ 177790 string characters out of 3139078
  402638 words of memory out of 3000000
  15514 multiletter control sequences out of 15000+200000
- 54130 words of font info for 68 fonts, out of 3000000 for 9000
+ 54362 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,13n,67p,784b,475s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,67p,1176b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/P
-rogram Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/lm/lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/lm/lmsso12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/marvosym/marvos
-ym.pfb>
-Output written on Abhirup_Datta_CV.pdf (6 pages, 187213 bytes).
+rogram Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2
+.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
+mssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso12.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/marvosym/marvosym.pfb>
+Output written on Abhirup_Datta_CV.pdf (7 pages, 219497 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
+ 160 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
  18945 words of extra memory for PDF output out of 20736 (max. 10000000)
 
