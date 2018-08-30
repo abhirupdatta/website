@@ -107,6 +107,7 @@ h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 0.1rem;
+  hyphens: auto;
 }
 
 strong {
@@ -118,6 +119,7 @@ strong {
 ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  hyphens: auto;
 }
 
 dt {
@@ -216,6 +218,7 @@ blockquote {
   margin: .8rem 0;
   color: #7a7a7a;
   border-left: .25rem solid #e5e5e5;
+  hyphens: auto;
 }
 blockquote p:last-child {
   margin-bottom: 0;
