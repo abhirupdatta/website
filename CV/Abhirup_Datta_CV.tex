@@ -1,422 +1,486 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% "ModernCV" CV and Cover Letter
-% LaTeX Template
-% Version 1.11 (19/6/14)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Xavier Danaux (xdanaux@gmail.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-% Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
-% used for structuring the document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt]{article}
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+\usepackage[margin=0.7in]{geometry}
+\usepackage{color,colordvi,pxfonts,marvosym,revnum,textcomp}
 
-\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage{enumitem}
 
-\moderncvstyle{classicnew} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1ex plus0.5ex minus0.2ex} 
 
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\setlength{\fboxsep}{2.5pt}
 
-\usepackage[scale=0.75]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\newcommand{\mine}{
+  \addtocounter{enumi}{1}
+\item[\fcolorbox{white}{grey}{\color{white} \tiny \arabic{enumi}}]
+}
 
-%\usepackage[colorlinks=TRUE]{hyperref}
+\definecolor{grey}{gray}{0.35}
 
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
-%----------------------------------------------------------------------------------------
+\newcommand{\dg}[1]{{\color{black} $\blacktriangleright$ {#1}}}
+\newcommand{\dn}[1]{{\color{black} {#1}}}
 
-\firstname{Abhirup Datta} % Your first name
-\familyname{} % Your last name
+\newcommand{\mybll}[1]{\smallskip\begin{enumerate}[start=1,label={},leftmargin=\parindent]\setlength{\itemsep}{#1}\vspace*{-0.7em}}
+\newcommand{\myben}[1]{\smallskip\begin{enumerate}[start=1,label={\scriptsize \arabic*$\ $},leftmargin=\parindent]\setlength{\itemsep}{#1}\vspace*{-0.7em}}
+\newcommand{\mycon}[1]{\smallskip\begin{enumerate}[resume,label={\scriptsize \arabic*$\ $},leftmargin=\parindent]\setlength{\itemsep}{#1}\vspace*{-0.7em}}
+\newcommand{\mydot}[1]{\begin{enumerate}[label=$\circ$,leftmargin=\parindent]\setlength{\itemsep}{#1}}
+\newcommand{\ee}{\end{enumerate}}
 
-% All information in this block is optional, comment out any lines you don't need
-\title{}
-\address{}{}
-%\mobile{(000) 111 1111}
-\phone{(000) 111 1112}
-%\fax{(000) 111 1113}
-\email{datta013@umn.edu}
-\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-\extrainfo{420 Delaware Street S.E.}
-%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
-%\quote{"A witty and playful quotation" - John Smith}
+\newcommand{\mytitle}[1]{\subsection*{#1}\smallskip}
 
-%----------------------------------------------------------------------------------------
+\newcommand{\mylift}[1]{\vspace*{#1}}
 
 \begin{document}
 
-{\huge Abhirup Datta \hfill \large \phonesymbol {(410) 502 2988} 
+\hfill \today
 
-{Johns Hopkins Bloomberg School of Public Health \hfill \large \emailsymbol {abhidatta@jhu.edu}}
+\begin{center}
+{\bf CURRICULUM VITAE}\\
+Abhirup Datta\\[3mm]
+Part I
+\end{center}
 
-{615 N Wolfe Street, Baltimore, MD 21205} \hfill {\large \textcolor{blue}{\httplink{http://abhidatta.com}}}
+\vspace*{10mm}
 
-%\makecvtitle % Print the CV title
-\hrulefill
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+\subsection*{PERSONAL DATA}
 
-\section{Academic Appointments}
-\cventry{2016--Present}{Assistant Professor}{Department of Biostatistics}{Johns Hopkins Bloomberg School of Public Health}{}{}  % Arguments not required can be left empty
+Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health.\\[0.2em]
+615 North Wolfe Street, Baltimore, MD 21205.\\[1em]
+(410) 502 2988 $\ |\ $ abhidatta@jhu.edu $\ |\ $ abhidatta.com 
 
-\section{Education}
-\cventry{2012--2016}{Ph.D., Biostatistics}{University of Minnesota}{Minneapolis}{}{Advisers: \href{http://ph.ucla.edu/faculty/banerjee}{Dr. Sudipto Banerjee} and \href{http://users.stat.umn.edu/~zouxx019/index.html}{Dr. Hui Zou}}  % Arguments not required can be left empty
 
-\vskip 2mm \cventry{2008--2010}{M.Stat.}{Indian Statistical Institute}{Kolkata, India}{}{Specialization in Math-Stat-Probability}
+\subsection*{EDUCATION, TRAINING}
 
-\vskip 2mm \cventry{2005--2008}{B.Stat.}{Indian Statistical Institute}{Kolkata, India}{}{}
+\smallskip
 
-\section{Research Interests}
-Air pollution, Bayesian statistics, Biostatistics, High dimensional data, Ecology, Environmental health, Epidemiology, Small area estimation, Spatial statistics
+\subsection*{Degrees}
 
-\section{Papers}
+\mydot{-0.1em}
 
-* indicates equal contributions \\
-$^\dagger$ indicates corresponding author or project leader \\
-$^\#$ indicates first author is a student advisee
+\item PhD, University of Minnesota, Twin Cities, MN, Biostatistics (2016).
+\item MStat, Indian Statistical Institute, Kolkata, India, Specialization in Math-Stat-Probability (2010).
+\item BStat (Hons.), Indian Statistical Institute, Kolkata, India (2008).
 
-\begin{enumerate}
-\item \vskip 4mm Heaton, M. J. and \textbf{Datta, A.} and Finley, A. and Furrer, R. and Guhaniyogi, R. and Gerber, F. and Gramacy, R. B. and Hammerling, D. and Katzfuss, M. and Lindgren, F. and Nychka, D. W. and Sun, F. and Zammit-Mangion, A. (Under review), {\em Methods for Analyzing Large Spatial Data: A Review and Comparison}, Journal of Agricultural, Biological, and Environmental Statistics (Accepted)
-	
-\item \vskip 4mm \textbf{Datta, A.} and Lin, W. and Rao, A. and Diouf, D. and Kouame, A. and Edwards, J. K. and Bao, L. and Louis, T. A. and Baral, S., {\em Bayesian estimation of MSM population in C{\^o}te d'Ivoire}, Statistics and Public Policy (Accepted)
+\ee
 
-\item \vskip 4mm Taylor-Rodriguez, D., Finley, A. O.,  \textbf{Datta, A.}, Babcock, C., Andersen, H., Cook, B. D., Morton, D. C.,  and Banerjee, S. {\em Spatial Factor Models for High-Dimensional and Large Spatial Data: An Application in Forest Variable Mapping}, Statistica Sinica (Accepted)
-	
-\item \vskip 4mm \textbf{Datta, A.}, Zou, H. and Banerjee, S. {\em Bayesian Inference for High-dimensional Changing Linear Regression with Application to Minnesota House Price Index Data}, Statistics and Its Interface (Accepted)
-	
-\item \vskip 4mm Finley, A.O., \textbf{Datta, A.}, Cook, B.C. ,  Morton, D.C., Andersen, H.E. and Banerjee, S. {\em Efficient algorithms for Bayesian Nearest Neighbor Gaussian Processes}, Journal of Computation and Graphical Statistics (Accepted)	
-	
-\item \vskip 4mm Edwards, J. K., Hileman, S., Donastorg, Y., Sanchez, R., Zadrozny, S., Baral, S., Hargreaves, J., Fearon, E., Zhao, J., \textbf{Datta, A.} and Weir, S. S.,  {\em \href{https://journals.lww.com/epidem/Fulltext/2018/11000/Estimating_Sizes_of_Key_Populations_at_the.7.aspx}{Estimating sizes of key populations at the national level: considerations for study design and analysis}}, Epidemiology, vol. 29,  no. 6, pp. 795--803, 2018
+\mylift{-1.5em}
 
-\item \vskip 4mm $^{\# \dagger}$ Saha, A. and \textbf{Datta, A.}, \href{https://onlinelibrary.wiley.com/doi/abs/10.1002/sta4.184}{\em BRISC: Bootstrap for rapid inference on spatial covariances} Stat, e184. 2018
+\subsection*{PROFESSIONAL EXPERIENCE}
 
-\item \vskip 4mm \textbf{Datta, A.} and Zou, H. \href{https://projecteuclid.org/euclid.aos/1513328577}{\em CoCoLasso for High-dimensional Error-in-variables Regression} Annals of Statistics, vol. 45, no. 6, pp. 2400-2426, 2017.
+\mydot{-0.1em}
 
-\item \vskip 4mm * Butler, E. E. and \textbf{* Datta, A.} and Flores-Moreno, H. and Chen, M. and Wythers, K. R. and Fazayeli, F. and Banerjee, A. and Atkin, O. K. and Kattge, J. and Amiaud, B. and Blonder, B. and Boenisch, G. and Bond-Lamberty, B. and Brown, K. A. and Byun, C. and Campetella, G. and Cerabolini, B. E. L. and Cornelissen, J. H. C. and Craine, J. M. and Craven, D. and de Vries, F. T. and Diaz, S. and Domingues, T. F. and Forey, E. and Gonzalez-Melo, A. and Gross, N. and Han, W. and Hattingh, W. N. and Hickler, T. and Jansen, S. and Kramer, K. and Kraft, N. J. B. and Kurokawa, H. and Laughlin, D. C. and Meir, P. and Minden, V. and Niinemets, U. and Onoda, Y. and Penuelas, J. and Read, Q. and Sack, L. and Schamp, B. and Soudzilovskaia, N. A. and Spasojevic, M. J. and Sosinski, E. and Thornton, P. E. and Valladares, F. and van Bodegom, P. M. and Williams, M. and Wirth, C. and Reich, P. B.,  \href{http://www.pnas.org/content/114/51/E10937}{\em Mapping local and global variability in plant trait distributions} Proceedings of the National Academy of Sciences, vol. 114, no. 51, pp. E10937--E10946, 2017.
+\item
+2016 -- present: Assistant Professor, Deptartment of Biostatistics, Johns Hopkins University.
+\item 2015 -- 2016: Inter-disciplinary Doctoral Dissertation Fellow, University of Minnesota.
+\item 2013 -- 2015:
+Research Assistant, Division of Biostatistics, University of Minnesota.   
+\item
+2012 -- 2015: Teaching Assistant, Division of Biostatistics, University of Minnesota. 
+\item 2010 -- 2012: Quantitative analyst, Morgan Stanley.
 
-\item \vskip 4mm \textbf{Datta, A.}, Banerjee, S., Finley, A.O., Hamm, N.A.S. and Schaap, M.  \href{https://projecteuclid.org/euclid.aoas/1475069608}{\em Non-separable Dynamic Nearest Neighbor Gaussian Process Models for Large Spatio-temporal Data with Application to Particulate Matter Analysis}, Annals of Applied Statistics, vol. 10, no. 3, pp. 128-1316, 2016.
+\ee
 
-\item \vskip 4mm \textbf {Datta, A.}, Banerjee, S., Finley, A.O. and Gelfand, A.E.  \href{http://onlinelibrary.wiley.com/doi/10.1002/wics.1383/abstract}{\em On nearest-neighbor Gaussian process models for massive spatial data}, Wiley Interdisciplinary Reviews: Computational Statistics, vol. 8, no. 5, pp. 162-171, 2016.
+\subsection*{PROFESSIONAL ACTIVITIES}
 
-\item \vskip 4mm \textbf {Datta, A.}, Banerjee, S., Finley, A.O. and Gelfand, A.E.  \href{http://www.tandfonline.com/doi/abs/10.1080/01621459.2015.1044091}{\em Hierarchical Nearest Neighbor Gaussian Process models for Large Geostatistical Datasets}, Journal of the American Statistical Association, vol. 111, no. 514, pp. 800-812, 2016.
+\smallskip
 
-\item \vskip 4mm Zhang, L., \textbf{Datta, A.}, and Banerjee, S. (Under review) {\em Practical Bayesian Inference for Massive Spatial Data on Modest Computing Environments}, \href{https://arxiv.org/pdf/1802.00495.pdf}{[ArXiV]}
+\subsection*{Professional Memberships}
 
-\item \vskip 4mm \textbf{Datta, A.}, Banerjee, S. and Hodges, J. S. (Under review) {\em Spatial disease mapping using Directed Acyclic Graph Auto-Regressive (DAGAR) models} \href{https://arxiv.org/pdf/1704.07848.pdf}{[ArXiV]}
+\mydot{-0.1em}
 
-\item \vskip 2mm Flores-Moreno, H.,   Fazayeli, F.,   Banerjee, A.,   \textbf{Datta, A.},   Kattge, J.,   Butler, E.,   Atkin, O.,   Wythers, K.,   Chen, M.,   Anand, M.,   Bahn, M.,   Burrascano, S.,   Byun, C.,   Cornelissen, J.,   Craine, J.,   Gonzalez-Melo , A.,   Hattingh, W.,   Jansen, S.,   Kraft, N.,   Kramer, K.,   Laughlin, D.,   Minden, V.,  Niinemets, U.,   Onipchenko, V., Penuelas, J.,   Soudzilovskaia, N.   and   Reich, P. (Under review) {\em Robustness of trait connections between multiple plant organs across environmental gradients and growth forms}
+\item American Statistical Association
 
-\item \vskip 4mm \textbf{Datta, A.} and Zou, H. (Under review)  {\em A note on cross-validation for Lasso under measurement errors}
+\ee
 
-\item \vskip 4mm \textbf{Datta, A.}, Fiksel, J., Amouzou, A. and Zeger, S. (Under review) {\em Local calibration of verbal autopsy algorithms} \href{https://arxiv.org/pdf/1810.10572.pdf}{[ArXiV]}
+\mylift{-1.5em}
 
-%\noindent \section{Working Papers}
+\subsection*{Program Development}
+
+\mydot{-0.1em}
+
+\item Session Chair, Joint Statistical Meetings (2014, 2019).
+\item Session Organizer, Joint Statistical Meetings (2018, 2019).
+\item Student paper award reviewer, Section on Bayesian Statistical Science, Joint Statistical Meetings (2018, 2019). 
+
+\ee
 %
-%\item \vskip 4mm \textbf{Datta, A.}, Bose, J., Rao, A., Baral, S.D., Louis, T.A. {\em Extrapolation of linear regression using kriging}
-%
-%\item  \vskip 4mm $^{\dagger}$ Fiksel, J., Ahmouzou, A., Zeger, S. L. and \textbf{Datta, A.}, {\em Bayesian regularized calibration of verbal autopsy based prediction of cause of death in data-scarce settings}
-%
-%\item \vskip 4mm Louis, T. A, \textbf{Datta, A.}, Li, Q. and Wang, C. {\em Percentile based residuals for non-Gaussian data}
-%
-%\item \vskip 4mm \textbf{Datta, A.}  {\em Homoscadastic Nearest Neighbor Gaussian Processes}
-%
-%\item \vskip 4mm \textbf{Datta, A.} and Zou, H. {\em Inconsistency of leave-one-out cross validation for Lasso when covariates have measurement errors}
+%\subsection*{Letters Supporting Awards and Fellowships}
+%University of Minnesota School of Public Health (USA), 
+%Johns Hopkins Bloomberg School of Public Health (USA)
+
+\subsection*{EDITORIAL ACTIVITIES}
+
+\smallskip
+
+\subsection*{Peer Review Activities \ {\small \em  The numbers in parentheses indicate the number of manuscripts reviewed or currently reviewing, excluding revisions or resubmissions.}} 
+Advances in Statistical Climatology Meteorology and Oceanography (1), Annals of Applied Statistics (4), Biometrics (4), Brazilian Journal of Probability and Statistics (1), Computational Statistics and Data Analysis (CSDA) (2), Electronic Journal of Statistics (1), Environmetrics (2), IEEE Transactions on Pattern Analysis and Machine Intelligence (1), Journal of Agricultural Biological and Environmental Statistics (JABES) (1), Journal of the American Statistical Association Applications and Case Studies (JASA-ACS) (2), Journal of the American Statistical Association Theory and Methods (JASA-TM) (7), Journal of Computation and Graphical Statistics (JCGS) (2), Journal of Multivariate Analysis (JMVA) (1), Journal of the Royal Statistical Society Series C (JRSSC) (1), Sankhya A (2), Spatial Statistics (3), Statistica Sinica (2), Statistics in Medicine (1)
+
+\subsection*{HONORS AND AWARDS}
+
+\mydot{-0.1em}
+
+\item Honorable mention: Savage Award Applied Methodology, International Society
+for Bayesian Analysis (ISBA) (2018).
+\item ASA Outstanding Statistical Application Award, American Statistical
+Association (2017).
+\item ENAR Distinguished Student Paper Award, International Biometric Society,
+Austin, TX (2016).
+\item Delta Omega Honorary Society Student Inductee (Pi Chapter), Minneapolis,
+MN (2016).
+\item Best Student Seminar Presentation Award, Division of Biostatistics, University
+of Minnesota, Minneapolis, MN (2016).
+\item Inter-disciplinary Doctoral Fellowship 2015-16, Division of Biostatistics, University
+of Minnesota Graduate School, Minneapolis, MN (2015).
+\item JSM Student Paper Award, American Statistical Association, Section on
+Bayesian Statistical Science, Boston, MA (2014).
+Also selected for best paper award in Statistics and the Environment Section
+\item Best Paper Award, Division of Biostatistics, University of Minnesota, Minneapolis,
+MN (2014).
+\item \textbf{Teaching:} 
+\item Excellence in Teaching, Johns Hopkins Bloomberg School of Public Health,
+Fourth Quarter, Probability IV (2018).
+\item Outstanding Teaching Assistant Award, Division of Biostatistics, University of
+Minnesota, Minneapolis, MN (2014).
+\item \textbf{Peer review:} Top 1\% of reviewers in Mathematics, Publons (2017, 2018).
+\item \textbf{Conference Travel Awards:} 
+\item ISBA World Meeting, International Society for Bayesian Analysis, Edinburgh, UK (2018).
+\item G70 Conference, Duke University, Durham, NC (2015).
+\item ISBA World Meeting, International Society for Bayesian Analysis, Cancun,
+Mexico (2014).
+\item Conference on Non-parametric Statistics for Big Data and Celebration to Honor
+Professor Grace Wahba, University of Wisconsin, Madison, WI (2014).
+\item Pan-American Advanced Study Institute on Spatio-Temporal Statistics, Travel
+grant from National Science Foundation, Buzios, Brazil (2014).
+\ee
+
+\subsection*{PUBLICATIONS \ {\small \em  The white numbers indicate first  author (including equal contributions) or senior author manuscripts, * indicates equal contributions.}}
+
+\smallskip
+
+\subsection*{Published Peer-Reviewed Articles}
+
+\myben{0.4em}
+\item Zhang L, \textbf{Datta A}, Banerjee S. {\it Practical Bayesian Inference for
+	Massive Spatial Data on Modest Computing Environments}
+\dg{Statistical Analysis and Data Mining (to appear)}
+\item Finley AO, \textbf{Datta A}, Cook BC, Morton DC, Andersen HE, Banerjee S.
+{\it Efficient algorithms for Bayesian Nearest Neighbor Gaussian Processes}
+\dg{ Journal of Computation and Graphical Statistics (to appear)}
+\item  Heaton MJ, \textbf{Datta A}, Finley AO, Furrer R, Guhaniyogi R, Gerber F, Gramacy RB, Hammerling D, Katzfuss M, Lindgren F, Nychka DW, Sun F, Zammit-Mangion A.  
+{\it A Case Study Competition Among Methods for Analyzing Large Spatial Data}
+\dg {Journal of Agricultural, Biological,, Environmental Statistics (to appear)}
+\item Taylor-Rodriguez D, Finley AO, \textbf{Datta A}, Babcock C, Andersen H, Cook BD,
+Morton DC, Banerjee S. 
+{\it Spatial Factor Models for High-Dimensional, Large Spatial Data: An Application in Forest Variable Mapping}
+\dg {Statistica Sinica (to appear)}
+\mine \textbf{Datta A}, Lin W, Rao A, Diouf D, Kouame A, Edwards JK, Bao L, Louis TA, Baral SB (2019)
+{\it Bayesian estimation of MSM population in Côte d’Ivoire}
+\dg{ Statistics and Public Policy 6(1), 1-13.}
+\mine \textbf{Datta A}, Zou H, Banerjee S. (2019)
+{\it Bayesian high-dimensional regression for change point analysis}
+\dg{ Statistics and Its Interface 12(2), 253-264.}
+\item Edwards JK, Hileman S, Donastorg Y, Sanchez R, Zadrozny S, Baral SB, Hargreaves 
+J, Fearon E, Zhao J, \textbf{Datta A}, Weir SS. (2018)
+ {\it Estimating sizes of key populations at the national level: considerations for study design, analysis}
+\dg{ Epidemiology 29(6): 795–803}
+\mine Saha A, \textbf{Datta A.} (2018)
+{\it BRISC: Bootstrap for rapid inference on spatial covariances}
+\dg{Stat e184}
+\mine \textbf{Datta A}, Zou H. (2017) 
+{\it CoCoLasso for High-dimensional Error-in-variables Regression}
+\dg {Annals of Statistics 45(6): 2400-2426}
+\mine *Butler EE, * \textbf{Datta A.} / $\cdots$ 48 authors $\cdots$ / Reich, PB. (2017)
+{\it Mapping local and global variability in plant trait distributions}
+\dg{ Proceedings of the National Academy of Sciences 114(51): E10937–E10946}
+\mine \textbf{Datta A}, Banerjee S, Finley AO, Hamm NAS, Schaap M. (2016) {\it Non-separable
+	Dynamic Nearest Neighbor Gaussian Process Models for Large Spatio-temporal Data with
+	Application to Particulate Matter Analysis}
+\dg{ Annals of Applied Statistics 10(3): 
+	1286-1316}
+\mine \textbf{Datta A}, Banerjee S, Finley AO, Gelfand AE. (2016)
+{\it On nearest-neighbor Gaussian
+	process models for massive spatial data}
+\dg{ Wiley Interdisciplinary Reviews: Computational
+	Statistics 8(5) 162-171}
+\mine \textbf{Datta A}, Banerjee S, Finley AO, Gelfand AE. (2016) 
+{\it Hierarchical Nearest Neighbor
+	Gaussian Process models for Large Geostatistical Datasets} 
+\dg{Journal of the American
+	Statistical Association 111(514) 800-812}
 
-\end{enumerate}
+\ee
 
-\section{Software}
-\cventry{R-package}{{\em calibratedVA: Locally calibrated cause specific mortality fractions using verbal autopsy data}}{}{ Fiksel J., \textbf{Datta, A.},  (2018)}{}{https://github.com/jfiksel/CalibratedVA}
+\subsection*{Manuscripts Under Review}
 
-\cventry{R-package}{{\em spNNGP: Spatial Regression Models for Large Datasets using Nearest Neighbor Gaussian Processes}}{}{ Finley A.O., \textbf{Datta, A.}, Banerjee, S.  (2017)}{R package version 0.1.0}{https://CRAN.R-project.org/package=spNNGP}
+\mycon{0.4em}
 
-\cventry{R-package}{{\em BRISC: Bootstrap for rapid inference on spatial covariances}}{}{ Saha, A., \textbf{Datta, A.},  Nocedal, J., Okazaki, N. (2018)}{R package version 0.1.0}{https://CRAN.R-project.org/package=BRISC}
+\mine \textbf{Datta A}, Banerjee S, Hodges JS. {\it Spatial disease mapping using
+	Directed Acyclic Graph Auto-Regressive (DAGAR) models}
+\item Flores-Moreno H, Fazayeli F, Banerjee A, \textbf{Datta A}, Kattge J, Butler EE, Atkin O,
+Wythers K, Chen M, Anand M, Bahn M, Burrascano S, Byun C, Cornelissen J,
+Craine J, Gonzalez-Melo A, Hattingh W, Jansen S, Kraft N, Kramer K, Laughlin 
+D, Minden V, Niinemets U, Onipchenko V, Penuelas J, Soudzilovskaia N, Reich 
+PB. {\it Robustness of trait connections between multiple plant organs across
+	environmental gradients, growth forms}
+\mine \textbf{Datta A}, Zou H. {\it A note on cross-validation for Lasso under measurement
+	errors}
+\mine \textbf{Datta A}, Fiksel J, Amouzou A, Zeger S. {\it Regularized Bayesian transfer learning for population level etiological
+	distributions}
+\mine \textbf{Datta A.}, Pita, A., Rao, A., Sithole, B., Mnisi, Z., and Baral, S.	\textit{Size Estimation of Key Populations in the HIV Epidemic in eSwatini using incomplete and misaligned capture-recapture data}
+\ee
 
-\section{Funding}
-%\cventry{}{}{}{Statistical consultant}{15$%$ effort}{}
+\subsection*{Software}
 
-\cventry{July 2018 to June 2019}{Statistical Maps of Air Quality in Baltimore City Using Low-Cost Monitoring Data}{Bloomberg American Health Initiative Spark Award}{Role: PI (Co-PI: Kirsten Koehler)}{\$71,000 (including $20\%$ effort)}{}
-\vskip 4mm
+\myben{0.4em}
 
-\cventry{Oct 2016 to Mar 2019}{Project SOAR (Supporting Operational AIDS Research)}{USAID SH1420 (PI: Deanna Kerrigan )}{Role: Statistical Consultant}{15$\%$ effort}{}
-\vskip 4mm
+\item
+{\bf BRISC} $\blacktriangleright$
+BRISC is an R-package on CRAN for rapid estimation, prediction and inference for large spatial data in a frequentist setup. BRISC estimation and prediction relies on nearest neighbor approximations of the spatial Gaussian Process likelihood, and uses a scalable paramteric bootstrap to provide inference for all spatial parameters. To our knowledge, currently BRISC is the only R-package that provides confidence intervals in a frequentist setup for all parameters including the spatial variance and range of Gaussian Process. Inference from BRISC is highly competitive with those obtained on Bayesian approaches relying on MCMC, while being manifold times faster.
+\item
+{\bf calibratedVA} $\blacktriangleright$
+calibatedVA is an R-package on Github for local calibration of national and sub-national cause specific mortality (CSMF) estimates produced by algortihms based on verbal autopsy data. These computer coded verbal autopsy (CCVA) algorithms usually rely on non-local gold standard training data and can be inaccurate in a local context. calibratedVA uses the output of the CCVA algorithm and limited amount of local gold standard data to update the CSMF estimates using a fast Bayesian hierarchical model. calibratedVA also has an ensemble calibration option where outputs from multiple CCVA algorithms are used to produce an unified calibrated CSMF estimate. the package can also be used in other general contexts to calibrate any discrete classifier (or a set of classifiers) based on limited local labeled data.
+\item 
+{\bf spNNGP} $\blacktriangleright$
+spNNGP is an R package on CRAN for fully Bayesian analysis of massive spatial data. Spatial analysis of point process data is usually computationally expensive requiring memory and computations that are quadratic and cubic in the number of locations where data is observed. spNNGP implements a class of scalable Nearest Neighbor Gaussian Process models that uses memory and computations that are linear in the size of the data. spNNGP enables fast fully Bayesian inference of all parameters and proper uncertainty quantified predictions at new locations. An MCMC-free hybrid Bayesian conjugate NNGP is also included which is super fast even for spatial datasets with millions of locations.
+\ee
 
-\cventry{Jan 2017 to Dec 2019}{Comprehensive Mortality Surveillance for Action (COMSA)}{Bill \& Melinda Gates Foundation (PI: Agbessi Amouzou)}{Role: CoI}{20$\%$ effort}{}
-\vskip 4mm
 
-\cventry{2018 to 2022}{NIH R01EB026549: Individualized spatial topology in functional neuroimaging}{ (PI: Martin Lindquist)}{Role: CoI}{9$\%$ effort}{}
-\vskip 4mm
+\newpage
 
-\cventry{Aug 2018 - July 2019}{NIH R21DA046188: Improved Heritability Estimation by Spatial Mapping of Genetic Relationships}{ PI: Saonli Basu)}{Role: PI on subaward}{10$\%$ effort}{}
-\vskip 4mm
+\begin{center}
+{\bf CURRICULUM VITAE}\\
+Abhirup Datta\\[3mm]
+Part II
+\end{center}
 
-\section{Awards}
-%{\em Fellowships and Grants \vskip 2mm}
-%For working with Institute on the Environment, University of Minnesota on Global Mapping of Plant Traits for the \href{http://www.cgd.ucar.edu/tss/clm/}{Community Land Model}} 
+\vspace*{0em}
 
-%\cventry{2015}{ Professional Development Grant}{School of Public Health, University of Minnesota}{Minneapolis, MN}{}{}
+\subsection*{TEACHING}
 
-%\cventry{2013}{Dean's Ph.D. Scholarship Award}{School of Public Health, University of Minnesota}{Minneapolis, MN}{}{}
+\smallskip
 
-%{\em Teaching Award \vskip 2mm}
+\subsection*{Advisees}
 
-%\textbf{Student Paper and Travel Awards
+\myben{-0.1em}
+\item Fiksel, Jacob, Doctor of Philosophy, Biostatistics (2015 -- present).
+\item Saha, Arkajyoti, Doctor of Philosophy, Biostatistics (2016 -- present).
+\item Pita, Andrew, Master of Science, Biostatistics (2017 -- 2019)
 
-\cventry{2018}{Honorable mention: Savage Award Applied Methodology}{International Society for Bayesian Analysis (ISBA)}{}{}{}
+\ee
 
-\cventry{2017}{ASA Outstanding Statistical Application Award}{American Statistical Association}{}{}{}
+\mylift{-1.5em}
 
-\cventry{2016}{ENAR Distinguished Student Paper Award}{International Biometric Society}{Austin, TX}{}{}
+\subsection*{Academic Advisees}
 
-\cventry{2016}{Delta Omega Honorary Society Student Inductee (Pi Chapter)}{}{Minneapolis, MN}{}{}
+\myben{-0.1em}
 
-\cventry{2016}{Best Student Seminar Presentation Award}{Division of Biostatistics}{University of Minnesota}{Minneapolis, MN}{}
+\item Kuo, Albert. Doctor of Philosophy, Biostatistics (2017 -- present).
 
-\cventry{2015}{Inter-disciplinary Doctoral Fellowship 2015-16}{Division of Biostatistics}{University of Minnesota Graduate School}{Minneapolis, MN}{}
+\ee
 
-%\cventry{2015}{\href{http://environment.umn.edu/fellowships-grants/interdisciplinary-doctoral-fellows/}{Inter-disciplinary Doctoral Fellowship 2015-16}}{University of Minnesota, Graduate School}{Minneapolis, MN}{}
+\mylift{-1.5em}
 
-\cventry{2014}{JSM Student Paper Award}{American Statistical Association, Section on Bayesian Statistical Science} {Boston, MA}{}{Also selected for best paper award in Statistics and the Environment Section}
+\subsection*{Thesis Committees / Thesis Reader}
 
-\cventry{2014}{Best Paper Award}{Division of  Biostatistics, University of Minnesota}{Minneapolis, MN}{}{}
+\myben{-0.1em}
 
-{\em Teaching \vskip 2mm}
-\cventry{2018}{Excellence in Teaching}{Johns Hopkins Bloomberg School of Public Health}{Fourth Quarter}{Probability IV}{}
+\item \dn{Pita}, Andrew, Master of Science, Biostatistics (2019).
+\ee
 
-\cventry{2014}{Outstanding Teaching Assistant Award}{Division of  Biostatistics, University of Minnesota}{Minneapolis, MN}{}{}
+\mylift{-1.5em}
 
-{\em Peer review \vskip 2mm}
-\cventry{2018}{Top 1$\%$ of reviewers in Mathematics}{Publons}{}{}{}
-\cventry{2017}{Top 1$\%$ of reviewers in Mathematics}{Publons}{}{}{}
+\subsection*{Preliminary Oral Participation \ \tiny * committee chair}
 
-{\em Conference Travel Awards \vskip 2mm}
-\cventry{2018}{ISBA World Meeting}{International Society for Bayesian Analysis}{Edinburgh, UK}{}{}
+\myben{-0.1em}
 
-\cventry{2015}{G70 Conference}{Duke University}{Durham, NC}{}{}
+\item \dn{Saha}, Arkajyoti. Doctor of Philosophy, Biostatistics (2019, expected).
+\item \dn{Windle}, Michael. Doctor of Philosophy, Epidemiology (2019, expected).
 
-\cventry{2014}{ISBA World Meeting}{International Society for Bayesian Analysis}{Cancun, Mexico}{}{}
+\ee
 
-\cventry{2014}{Conference on Non-parametric Statistics for Big Data and Celebration to Honor Professor Grace Wahba}{ University of Wisconsin}{Madison, WI}{}{}
+\mylift{-1.0em}
 
-\cventry{2014}{Pan-American Advanced Study Institute on Spatio-Temporal Statistics}{Travel grant from National Science Foundation}{Buzios, Brazil}{}{}
+\subsection*{Final Oral Participation \ \tiny * committee chair}
 
-%{\em Other awards \vskip 2mm}
+\myben{-0.1em}
 
-%\cventry{2015}{Finalist}{\href{http://environment.umn.edu/education-leadership/sisca-challenge/}{Dow Sustainability Innovation Student Challenge Award (SISCA)}}{Institute on the Environment}{Minneapolis, MN}{}{}
+\item \dn{Colston}, Josh, Doctor of Philosophy, International Health (2018).
+\item \dn{Lee}, Youjin, Doctor of Philosophy, Biostatistics (2019).
+\ee
 
-%\cventry{2014}{Second prize for best abstract and presentation}{ School of Public Health Research Day, University of Minnesota}{Minneapolis, MN}{}{}
+\mylift{-0.5em}
 
-%\cventry{2003-2008}{Awards for academic excellence in several semesters}{Indian Statistical Institute}{Kolkata, India}{}{}
+\subsection*{Classroom Instruction - Principal Instructor}
 
-\section{Teaching and mentoring}
+\mydot{-0.1em}
 
-{\em Thesis advisor} \vskip 2mm
-\cventry{In progress}{Arkajyoti Saha}{Ph.D. student in Department of Biostatistics}{Co-advised with Nilanjan Chatterjee}{}{}
-\cventry{In progress}{Andrew Pita}{Sc.M. student in Department of Biostatistics}{}{}{}
-\vskip 4mm
+\item Biostatistics PhD seminar (2019).
+\item 140.724 Probability Theory IV (2018, 2019).
+\item 140.850 Advanced spatial statistics (2018).
+\item 140.850 Scalable methods for large spatial data (2017).
 
-{\em Final Oral Examination / Thesis Reader} \vskip 2mm
-\cventry{2018}{Josh Colston}{Department of International Health}{}{}{}
-\vskip 4mm
+\ee
 
-{\em Short Course} \vskip 2mm
-\cventry{July 2017}{Full day short course on Bayesian models for high dimensional spatial data}{Joint Statistical Meetings}{Baltimore, MD}{\href{https://abhirupdatta.github.io/spatstatJSM2017/}{Course webpage}}{}
-\vskip 4mm
+\mylift{-1.5em}
 
-{\em Courses at Hopkins} \vskip 2mm
-\cventry{Spring, 2019}{Probability Theory IV}{}{}{}{}
-\cventry{Spring, 2019}{Special topics: Advanced spatial statistics}{}{}{}{}
-\cventry{Spring, 2018}{Probability Theory IV}{}{}{}{}
+\subsection*{Classroom Instruction - Invited Guest Lecturer (JHSPH)}
 
-\cventry{May, 2018}{Guest lecture in Environmental Epidemiology: Time Series}{}{}{}{}
+\mydot{-0.1em}
 
-\cventry{Spring, 2018}{Special topics: Advanced spatial statistics}{}{\href{https://github.com/abhirupdatta/spatial-statistics-2018}{Github page}}{}{}
+\item 340.680.01 Environmental and Occupational Epidemiology (2018).
 
-\cventry{Spring, 2017}{Special topics: Scalable methods for large spatial data}{}{\href{https://github.com/abhirupdatta/spatial-course-2017}{Github page}}{}{}
-\vskip 4mm
+\ee
 
-\vskip 2mm{\em Teaching Assistant, Division of Biostatistics, University of Minnesota} \vskip 2mm
+\mylift{-1.5em}
 
-\cventry{Spring 2015}{Advanced Statistical Inference}{}{}{}{
-	Instructors: Dr. Cavan Reilly and Dr. David Vock}
+\subsection*{Classroom Instruction - Invited Lecturer (Other)}
 
-\cventry{Fall 2014}{Probability Models for Biostatistics}{}{}{}{
-	Instructor: Dr. Baolin Wu}
+\mydot{-0.1em}
 
-\cventry{Spring 2014}{Bayes Decision Theory and Data Analysis}{}{}{}{
-	Instructor: Dr. Sudipto Banerjee}
+\item Full day short course on Bayesian models for high dimensional spatial data, Joint Statistical Meetings (2017). 
 
-\cventry{Spring 2014}{Advanced Statistical Inference}{}{}{}{
-	Instructors: Dr. Julian Wolfson and Dr. David Vock}
+\ee
 
-\cventry{Fall 2013}{Probability Models for Biostatistics}{}{}{}{
-	Instructor: Dr. Baolin Wu}
+\subsection*{RESEARCH GRANT PARTICIPATION  \ {\tiny \em  The solid dots $\bullet$ indicate grants to IR.}}
 
-\cventry{Spring 2012}{Advanced Regression}{}{}{}{Instructor: John Hughes, Ph.D}
+\smallskip
 
-\cventry {Fall 2012}{Statistical Methods for Correlated Data}{}{}{}
-{Instructor: Dr. Julian Wolfson}
+\subsection*{Ongoing Research Support}
 
-\section{Professional Activities}
-\cvitem{Reviewer for} {\textit{Advances in Statistical Climatology, Meteorology and Oceanography}}
-\cvitem{}{ \textit{Annals of Applied Statistics}}
-\cvitem{}{\textit{Biometrics}}
-\cvitem{}{\textit{Computational Statistics and Data Analysis (CSDA)}}
-\cvitem{}{\textit{Environmetrics}}
-\cvitem{}{\textit{Journal of Agricultural, Biological, and Environmental Statistics} (JABES)} 
-\cvitem{}{\textit{Journal of the American Statistical Association} (JASA) }
-\cvitem{} {\textit{Journal of Computation and Graphical Statistics (JCGS)} }
-\cvitem{} {\textit{Journal of Multivariate Analysis (JMVA)} }
-\cvitem{}{\textit{Journal of the Royal Statistical Society Series C (JRSSC)}}
-\cvitem{}{\textit{Sankhya A}}
-\cvitem{}{\textit{Spatial Statistics}}
-\cvitem{}{\textit{Statistica Sinica}}
-\cvitem{}{\textit{Statistics in Medicine}}
-\cvitem{}{\textit{Transactions on Pattern Analysis and Machine Intelligence}}
-\cvitem{}{}
+\mydot{0.3em}
 
-\cvitem{Other services} {\textit{Faculty search committee, Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health, 2017-18}}
-\cvitem{} {\textit{Seminar organizer, Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health, 2017}}
-\cvitem{} {\textit{Session organizer "Statistical Advancements in Forestry, Ecology and Climate Modeling", Joint Statistical Meetings, 2018, Vancouver, CA}}
-\cvitem{} {\textit{Session Chair, Joint Statistical Meetings, 2014, Boston, MA}}
+\item[$\bullet$]
+{\it Statistical Maps of Air Quality in Baltimore City Using Low-Cost Monitoring Data (Bloomberg American Health Initiative Spark Award)}\\[0.0em]
+\dn{Dates:} July 2018 to June 2019.
+\dn{Principal Investigators:} Abhirup Datta and Kirsten Koehler.\\
+\dn{Responsibility:} Principal Investigator.
 
-%\section{References}
-%\cventry{}{\href{http://ph.ucla.edu/faculty/banerjee}{Dr. Sudipto Banerjee}}{\emailsymbol sudipto@ucla.edu}{}{}{}
-%\cventry{}{\href{http://users.stat.umn.edu/~zouxx019/index.html}{Dr. Hui Zou}}{\emailsymbol zouxx019@umn.edu}{}{}{}
-%\cventry{}{\href{http://www.biostat.umn.edu/~hodges/}{Dr. James S. Hodges}}{\emailsymbol hodge003@umn.edu}{}{}{}
-%\cventry{}{\href{http://blue.for.msu.edu/}{Dr. Andrew O. Finley}}{\emailsymbol finleya@msu.edu}{}{}{}
+\item[$\bullet$]
+{\it Project SOAR -- Supporting Operational AIDS Research (USAID SH142)}\\[0.0em]
+\dn{Dates:} Oct 2016 to Mar 2019.
+\dn{Principal Investigator:} Deanna Kerrigan.\\
+\dn{Responsibility:} Statistical Consultant.
 
-\section{Invited Presentations}
-\cventry{Aug 2019}{International Statistical Institute World Congress}{Kuala lampur, Malaysia}{}{}{}
-\cventry{Aug 2019}{Joint Statistical Meetings}{Denver, CO}{}{}{}
+\item[$\bullet$]
+{\it Comprehensive Mortality Surveillance for Action (COMSA)- Mozambique (Bill \& Melinda Gates Foundation)}\\[0.0em]
+\dn{Dates:} Jan 2017 to Dec 2019.
+\dn{Principal Investigator:} Agbessi Amouzou.\\
+\dn{Responsibility:} Co-investigator.
 
-\cventry{Jan 2019}{Interdisciplinary Statistical Research Unit, Indian Statistical Institute}{Kolkata, India}{}{}{}
+\item[$\bullet$]
+{\it Individualized spatial topology in functional neuroimaging (NIBIB R01)}\\[0.0em]
+\dn{Dates:} July 2018 to Mar 2021.
+\dn{Principal Investigator:} Martin Lindquist.\\
+\dn{Responsibility:} Co-investigator.
 
-\cventry{Aug 2018}{Joint Statistical Meetings}{Vancouver, Canada}{}{}{}
+\item[$\bullet$]
+{\it Improved Heritability Estimation by Spatial Mapping of Genetic Relationships (University of Minnesota (Prime: NIH R21))}\\[0.0em]
+\dn{Dates:} July 2018 to Jun 2020.
+\dn{Principal Investigator:} Saonli Basu.\\
+\dn{Responsibility:} Principal investigator on sub-contract.
 
-\cventry{Jun 2018}{ISBA World Meeting}{Edinburgh, UK}{}{}{}
+\ee
 
-\cventry{Mar 2018}{Eastern North American Region Meetings (ENAR), International Biometric Society}{Atlanta, GA}{}{}{}
+\subsection*{ACADEMIC SERVICE}
 
-\cventry{Dec 2017}{International Indian Statistical Association Conference}{Hyderabad, India}{}{}{}
+\smallskip
 
-\cventry{Dec 2017}{10th International Conference of the ERCIM WG on Computational and Methodological Statistics}{London, UK}{}{}{}
+\subsection*{Department of Biostatistics}
 
-\cventry{Nov 2017}{American Public Health Association Annual Meeting}{Atlanta, GA}{}{}{}
+\mydot{-0.1em}
 
-\cventry{Oct 2017}{UNAIDS Reference Group Fall Meeting 16-18 October 2017}{London, UK}{}{}{}
+\item Member, Curriculum committee, Biostatistics Retreat (2018)
+\item Member, Faculty Recruitment Committee (2017).
+\item Organizer, Biostatistics departmental seminars (2017).
 
-\cventry{Feb 2017}{Department of Mathematics and Statistics, University of Maryland }{Baltimore County, MD}{}{}{}
+\ee
 
-\cventry{Feb 2017}{CDC Consultation Conference on Key Populations, CDC}{Atlanta, GA}{}{}{}
 
-\cventry{Dec 2016}{Platinum Jubilee International Conference on Applications of Statistics, Calcutta University}{Kolkata, India}{}{}{}
+\subsection*{PRESENTATIONS}
 
-\cventry{Nov 2016}{President's Emergency Plan for Aids Relief}{Washington DC}{}{}{}
+\smallskip
 
-\cventry{Feb 2016}{Department of Statistical Science, Duke University}{Durham, NC}{}{}{}
+\subsection*{Scientific Meetings,  \ \small* invited, $^\#$ posters}
 
-\cventry{Feb 2016}{Department of Biostatistics, University of Michigan}{Ann Arbor, MI}{}{}{}
+\myben{0.3em}
 
-\cventry{Feb 2016}{Department of Biostatistics, Johns Hopkins University}{Baltimore, MD}{}{}{}
+\item *Aug 2019 International Statistical Institute World Congress, Kuala lampur, Malaysia.
+\item *Aug 2019 Joint Statistical Meetings, Denver, CO.
+\item *Aug 2018 Joint Statistical Meetings, Vancouver, Canada.
+\item *Jun 2018 ISBA World Meeting, Edinburgh, UK.
+\item *Mar 2018 Eastern North American Region Meetings (ENAR), International Biometric
+Society, Atlanta, GA.
+\item *Dec 2017 International Indian Statistical Association Conference, Hyderabad, India.
+\item *Dec 2017 10th International Conference of the ERCIM WG on Computational and
+Methodological Statistics, London, UK.
+\item *Nov 2017 American Public Health Association Annual Meeting, Atlanta, GA.
+\item *Oct 2017 UNAIDS Reference Group Fall Meeting 16-18 October 2017, London, UK.
+\item July 2017 IMS New Researcher’s Conference, Baltimore, MD.
+\item July 2017 Spatial Statistics Conference, Lancaster, UK.
+\item *Feb 2017 CDC Consultation Conference on Key Populations, CDC, Atlanta, GA.
+\item *Dec 2016 Platinum Jubilee International Conference on Applications of Statistics, Calcutta
+University, Kolkata, India.
+\item Aug 2016 Joint Statistical Meetings, Chicago, IL.
+\item Mar 2016 Eastern North American Region Meetings (ENAR), International Biometric
+Society, Austin, TX.
+\item Dec 2015 International Indian Statistical Association Conference, Pune, India.
+\item Mar 2015 Eastern North American Region Meetings (ENAR), International Biometric
+Society, Miami, FL.
+\item Aug 2014 Joint Statistical Meetings, Boston, MA.
+\item $^\#$ Jul 2014 ISBA World Meeting, Cancun, Mexico.
+\item $^\#$ Jun 2014 Conference on Nonparametric Statistics for Big Data and Celebration to Honor
+Professor Grace Wahba, Madison, WI.
+\item Jun 2014 Pan-American Advanced Study Institute on Spatio-Temporal Statistics, Buzios,
+Brazil.
+\item Mar 2014 Eastern North American Region Meetings (ENAR), International Biometric
+Society, Baltimore, MD.
+\item Aug 2010 Mahalanobis International Symposium on Statistics, Kolkata, India.
 
-\cventry{Feb 2016}{Department of Statistics, University of California}{Irvine, CA}{}{}{}
+\ee
 
-\cventry{Feb 2016}{Department of Biostatistics, University of North Carolina}{Chapel Hill, NC}{}{}{}
+\subsection*{Invited Seminars}
 
-\cventry{Jan 2016}{Division of Biostatistics Student Seminar, University of Minnesota}{Minneapolis, MN}{}{}{}
+\mycon{0.3em}
+\item Feb 2019, Department of Biostatistics, UCLA, Los Angeles, CA
+\item Jan 2019 Interdisciplinary Statistical Research Unit, Indian Statistical Institute, Kolkata,
+India.
+\item Feb 2017 Department of Mathematics and Statistics, University of Maryland , Baltimore
+County, MD.
+\item Feb 2016 Department of Statistical Science, Duke University, Durham, NC.
+\item Feb 2016 Department of Biostatistics, University of Michigan, Ann Arbor, MI.
+\item Feb 2016 Department of Biostatistics, Johns Hopkins University, Baltimore, MD.
+\item Feb 2016 Department of Statistics, University of California, Irvine, CA.
+\item Feb 2016 Department of Biostatistics, University of North Carolina, Chapel Hill, NC.
 
-\cventry{Dec 2015}{International Indian Statistical Association Conference}{Pune, India}{}{}{}
+\ee
 
-\cventry{Aug 2010}{Mahalanobis International Symposium on Statistics}{Kolkata, India}{}{}{}
+\subsection*{Other Meetings and Events, \ \small $^\#$ posters}
 
-\section{Contributed Presentations}
-\cventry{July 2017}{IMS New Researcher's Conference}{Baltimore, MD}{}{}{}
+\mycon{0.3em}
+\item $^\#$ Mar 2019 SEARCH Scientific Advisory Committee meeting, Yale University, New Haven, CT. 
+\item Nov 2017 Small Area Estimation
+and Spatial Statistics (SAESS) Working Group, Department of Biostatistics, Johns Hopkins University, Baltimore, MD. 
+\item Nov 2017 SAESS Working Group Open House, Department of Biostatistics, Johns Hopkins University, Baltimore, MD.
+\item Apr 2017 SAESS Working Group, Department of Biostatistics, Johns Hopkins University, Baltimore, MD.
+\item Mar 2017 Department of Biostatistics Student Recruitment Event, Johns Hopkins University, Baltimore, MD.
+\item Dec 2016 Department of Biostatistics Faculty Meeting, Johns Hopkins University, Baltimore, MD.
+\item Nov 2016 SAESS Working Group.
+\item Sept 2016 Grand Rounds Seminar, Department of Biostatistics, Johns Hopkins University, Baltimore, MD.
+\item Nov 2016 President’s Emergency Plan for Aids Relief, Washington DC.
+\item Sept 2016 SAESS Working Group, Department of Biostatistics, Johns Hopkins University, Baltimore, MD.
+\item Jan 2016 Division of Biostatistics Student Seminar, University of Minnesota, Minneapolis,
+MN.
+\item Dec 2015 Dow Sustainability Innovation Student Challenge Award (SISCA), University of Minnesota, Minneapolis,
+MN.
+\item $^\#$ Apr 2015 G70: A Celebration of Alan Gelfand’s 70th Birthday, Duke University, Durham, NC.
+\item $^\#$ Apr 2015 University of Minnesota School of Public Health Annual Research Day, Minneapolis,
+MN.
+\item $^\#$ Apr 2014 University of Minnesota School of Public Health Annual Research Day, Minneapolis,
+MN.
+\item $^\#$ Oct 2013 University of Minnesota U-Spatial Symposium, Minneapolis, MN.
 
-\cventry{July 2017}{Spatial Statistics Conference}{Lancaster, UK}{}{}{}
+\ee
 
-\cventry{Aug 2016}{Joint Statistical Meetings}{Chicago, IL}{}{}{}
-
-\cventry{Mar 2016}{Eastern North American Region Meetings (ENAR), International Biometric Society}{Austin, TX}{}{}{}
-
-\cventry{Dec 2015}{2015 Dow Sustainability Innovation Student Challenge Award (SISCA)}{Minneapolis, MN}{}{}{}
-
-\cventry{Mar 2015}{Eastern North American Region Meetings (ENAR), International Biometric Society}{Miami, FL}{}{}{}
-
-\cventry{Aug 2014}{Joint Statistical Meetings}{Boston, MA}{}{}{}
-
-\cventry{Jun 2014}{Pan-American Advanced Study Institute on Spatio-Temporal Statistics}{Buzios, Brazil}{}{}{}
-
-\cventry{Mar 2014}{Eastern North American Region Meetings (ENAR), International Biometric Society}{Baltimore, MD}{}{}{}
-
-\section{Poster Presentations} 
-\cventry{Apr 2015}{ G70: A Celebration of Alan Gelfand's 70th Birthday}{Durham, NC}{}{}{}
-
-\cventry{Apr 2015}{University of Minnesota School of Public Health Annual Research Day}{ Minneapolis, MN}{}{}{}
-
-\cventry{Jul 2014}{ISBA World Meeting}{Cancun, Mexico}{}{}{}
-
-\cventry{Jun 2014}{Conference on Nonparametric Statistics for Big Data and Celebration to Honor Professor Grace Wahba}{Madison, WI}{}{}{}
-
-\cventry{Apr 2014}{University of Minnesota School of Public Health Annual Research Day}{ Minneapolis, MN}{}{}{}
-
-\cventry{Oct 2013}{University of Minnesota U-Spatial Symposium}{Minneapolis, MN}{}{}{}
-
-\section{Other Presentations at Hopkins}
-\cventry{Nov 2017}{Coherent extrapolation of linear regression using kriging}{Small Area Estimation and Spatial Statistics Working Group}{}{}{}
-
-\cventry{Nov 2017}{Overview of spatial statistics}{Small Area Estimation and Spatial Statistics Working Group}{}{}{}
-
-\cventry{Apr 2017}{Spatial disease mapping using Directed Acyclic Graph Autoregressive (DAGAR) models}{Small Area Estimation and Spatial Statistics Working Group}{}{}{}
-
-\cventry{Mar 2017}{Spatial Analysis with Big and Small Data}{Department of Biostatistics}{}{}{}
-
-\cventry{Dec 2016}{Large Scale Spatio-temporal Interpolation of
-Environmental Pollutants}{Department of Biostatistics}{}{}{}
-
-\cventry{Nov 2016}{Approaches to population size estimation for key populations}{Small Area Estimation and Spatial Statistics Working Group}{}{}{}
-
-\cventry{Sept 2016}{Bayesian Models for High Dimensional Spatial
-Data}{Department of Biostatistics}{}{}{}
-
-\cventry{Sept 2016}{Bayesian Models for High Dimensional Spatial Data}{Small Area Estimation and Spatial Statistics Working Group}{}{}{}
-
-\section{Other Research Experience}
-\cventry{2015--2016}{Inter-disciplinary Doctoral Dissertation Fellow}{\href{http://environment.umn.edu/}{Institute on the Environment}, University of Minnesota}{Minneapolis, MN}{}{\emph{Mentor}: \href{http://www-users.cs.umn.edu/~banerjee/}{Dr. Arindam Banerjee}}
-
-\cventry{2012-2015}{Research Assistant}{Division of Biostatistics, University of Minnesota}{Minneapolis, MN}{}{\emph{Supervisor}: Dr. Sudipto Banerjee}
-
-\cventry{Summers of 2015 \& 2014}{Research Consultant}{Geospatial Lab, Michigan State University}{}{}{\emph{Supervisor}: \href{http://blue.for.msu.edu/}{Dr. Andrew O. Finley}}
-
-\cventry{Summer 2007}{Visiting Student Research Program (Mathematics)}{Tata Institute of Fundamental Research}{Mumbai, India}{}{}
-
-\section{Industry Appointments}
-\cventry{2011--2012}{Quantitative Analyst}{\href{http://www.morganstanley.com/}{{Morgan Stanley}}}{New York, NY}{}{} 
-
-\cventry{2010--2011}{Quantitative Analyst}{{{Morgan Stanley}}}{Mumbai, India}{}{} 
-
-\cventry{Summer 2009}{Quantitative Analyst Intern}{{Morgan Stanley}}{Mumbai, India}{}{} 
-
-\cventry{Summer 2008}{Analytics Intern}{\href{http://www.systat.com/}{{SYSTAT Software Asia Pacific Ltd}}}{Bangalore, India}{}{}
-       
-%\section{Computer skills} \hskip 1in R, Winbugs, Matlab (past experience), Q (past experience)
-
-\section{Professional Memberships}
-\cvitem {}{American Statistical Association}
-%\cvitem {}{Eastern North American Region International Biometric Society}
-%\cvitem {}{International Indian Statistical Association}
 \end{document}
+
+
