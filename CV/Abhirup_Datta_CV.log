@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  10 MAY 2019 15:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 JUN 2019 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -379,37 +379,37 @@ Missing character: There is no â in font pxr!
 Missing character: There is no € in font pxr!
 Missing character: There is no “ in font pxr!
  [3] [4]
-[5]
+[5] [6]
 Missing character: There is no â in font pxr!
 Missing character: There is no € in font pxr!
 Missing character: There is no ™ in font pxr!
- [6]
+ [7]
 Missing character: There is no â in font pxr!
 Missing character: There is no € in font pxr!
 Missing character: There is no ™ in font pxr!
 Missing character: There is no â in font pxr!
 Missing character: There is no € in font pxr!
 Missing character: There is no ™ in font pxr!
- [7] [8] (./Abhirup_Datta_cv.aux) ) 
+ [8] (./Abhirup_Datta_cv.aux) ) 
 Here is how much of TeX's memory you used:
- 3427 strings out of 493014
- 45619 string characters out of 6133351
+ 3425 strings out of 493014
+ 45599 string characters out of 6133351
  106266 words of memory out of 5000000
  6926 multiletter control sequences out of 15000+600000
- 31787 words of font info for 93 fonts, out of 8000000 for 9000
+ 30365 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  24i,6n,32p,902b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/en
-c/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/pxfo
-nts/pxsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pxfonts/pxs
-ya.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pxfonts/rpxb.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/pxfonts/rpxi.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/pxfonts/rpxr.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Abhirup_Datta_cv.pdf (8 pages, 100566 bytes).
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dv
+ips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/pxfonts/
+pxsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pxfonts/pxsya.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pxfonts/rpxb.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/pxfonts/rpxi.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/pxfonts/rpxr.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/urw/palatino/uplri8a.pfb>
+Output written on Abhirup_Datta_cv.pdf (8 pages, 101504 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
