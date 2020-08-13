@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.29)  11 JUL 2020 15:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.29)  13 AUG 2020 13:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -434,12 +434,12 @@ File: upxsyc.fd 2000/12/14 v1.0
 ) [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 149--151
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--157
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
 
  []
 
@@ -466,7 +466,7 @@ ts/rpxr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplb8a
 .pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/lo
 cal/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Abhirup_Datta_cv.pdf (8 pages, 109679 bytes).
+Output written on Abhirup_Datta_cv.pdf (8 pages, 111487 bytes).
 PDF statistics:
  64 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream
