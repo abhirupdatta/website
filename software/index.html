@@ -133,13 +133,40 @@ Email: abhidatta at jhu dot edu </br>
     <div class="content container">
       <div class="page">
   <h1 class="page-title">Software</h1>
-  <h3><h8>R packages</h8></h3>
+  <h3 id="r-packages"><h8>R packages</h8></h3>
 
-<ul class="bibliography"><li><span id="codalm"> J. Fiksel and A. Datta, <i>codalm: Transformation-Free Linear Regression for Compositional Outcomes and Predictors</i>. 2020.</span>
+<ul class="bibliography"><li><span id="rfgls"> A. Saha, S. Basu, and A. Datta, <i>RandomForestsGLS: Random Forests for Dependent Data</i>. 2021.</span>
+
+<div id="rfgls-materials">
+
+	<a onclick="toggle_visibility('rfgls-bibtex')" href="#!">Bibtex</a>
+    <div id="rfgls-bibtex" style="display:none;">
+    <pre>@manual{rfgls,
+  title = {RandomForestsGLS: Random Forests for Dependent Data},
+  author = {Saha, Arkajyoti and Basu, Sumanta and Datta, Abhirup},
+  year = {2021},
+  note = {R package version 0.1.2},
+  url = {https://cran.r-project.org/web/packages/RandomForestsGLS/}
+}
+</pre>
+    </div>
+
+
+<a onclick="toggle_visibility_wrap('rfgls-abstract')" href="#!">Description</a>
+	<div id="rfgls-abstract" style="display:none;">
+	<blockquote>RandomForestsGLS is a package for fitting non-linear regression models for dependent (spatial and temporal) data with correlated errors. RandomForestsGLS implements the Generalised Least Square (GLS) based Random Forests (RF-GLS) detailed in Saha, Basu and Datta (2020). For spatial data, RandomForestsGLS combines Random Forests and Gaussian Process to estimate non-linear functions and predict spatial outcomes. For time-series data, RandomForestsGLS uses the AR (auto-regressive) process covariance structure with Random Forests for estimation.</blockquote>
+	</div>
+	
+
+	
+
+</div>
+</li>
+<li><span id="codalm"> J. Fiksel and A. Datta, <i>codalm: Transformation-Free Linear Regression for Compositional Outcomes and Predictors</i>. 2020.</span>
 
 <div id="codalm-materials">
 
-    <a onclick="toggle_visibility('codalm-bibtex')" href="#!">Bibtex</a>
+	<a onclick="toggle_visibility('codalm-bibtex')" href="#!">Bibtex</a>
     <div id="codalm-bibtex" style="display:none;">
     <pre>@manual{codalm,
   title = {codalm: Transformation-Free Linear Regression for Compositional Outcomes and Predictors},
@@ -153,12 +180,12 @@ Email: abhidatta at jhu dot edu </br>
 
 
 <a onclick="toggle_visibility_wrap('codalm-abstract')" href="#!">Description</a>
-    <div id="codalm-abstract" style="display:none;">
-    <blockquote>codalm is an R-package for linear modeling of compositional data (coda). It implements a simple  transformation-free regression of a compositional outcome on a compositional prediction using an M-estimation method. Estimates of the regression-coefficient matrix, bootstrap-based confidence intervals are provided. A permutation based test of linear association is also offered.</blockquote>
-    </div>
-    
+	<div id="codalm-abstract" style="display:none;">
+	<blockquote>codalm is an R-package for linear modeling of compositional data (coda). It implements a simple  transformation-free regression of a compositional outcome on a compositional prediction using an M-estimation method. Estimates of the regression-coefficient matrix, bootstrap-based confidence intervals are provided. A permutation based test of linear association is also offered.</blockquote>
+	</div>
+	
 
-    
+	
 
 </div>
 </li>
@@ -166,7 +193,7 @@ Email: abhidatta at jhu dot edu </br>
 
 <div id="brisc-materials">
 
-    <a onclick="toggle_visibility('brisc-bibtex')" href="#!">Bibtex</a>
+	<a onclick="toggle_visibility('brisc-bibtex')" href="#!">Bibtex</a>
     <div id="brisc-bibtex" style="display:none;">
     <pre>@manual{brisc,
   title = {BRISC: Fast Inference for Large Spatial Datasets using BRISC},
@@ -180,13 +207,13 @@ Email: abhidatta at jhu dot edu </br>
 
 
 <a onclick="toggle_visibility_wrap('brisc-abstract')" href="#!">Description</a>
-    <div id="brisc-abstract" style="display:none;">
-    <blockquote>BRISC is a package for rapid estimation, prediction and inference for large spatial data in a frequentist setup. BRISC estimation and prediction relies on nearest neighbor approximations of the spatial Gaussian Process likelihood, and uses a scalable paramteric bootstrap to provide inference for all spatial parameters. 
-        To our knowledge, currently BRISC is the only R-package that provides confidence intervals in a frequentist setup for all parameters including the spatial variance and range of Gaussian Process. Inference from BRISC is highly competitive with those obtained on Bayesian approaches relying on MCMC, while being manifold times faster.</blockquote>
-    </div>
-    
+	<div id="brisc-abstract" style="display:none;">
+	<blockquote>BRISC is a package for rapid estimation, prediction and inference for large spatial data in a frequentist setup. BRISC estimation and prediction relies on nearest neighbor approximations of the spatial Gaussian Process likelihood, and uses a scalable paramteric bootstrap to provide inference for all spatial parameters. 
+	    To our knowledge, currently BRISC is the only R-package that provides confidence intervals in a frequentist setup for all parameters including the spatial variance and range of Gaussian Process. Inference from BRISC is highly competitive with those obtained on Bayesian approaches relying on MCMC, while being manifold times faster.</blockquote>
+	</div>
+	
 
-    
+	
 
 </div>
 </li>
@@ -194,7 +221,7 @@ Email: abhidatta at jhu dot edu </br>
 
 <div id="calibratedVA-materials">
 
-    <a onclick="toggle_visibility('calibratedVA-bibtex')" href="#!">Bibtex</a>
+	<a onclick="toggle_visibility('calibratedVA-bibtex')" href="#!">Bibtex</a>
     <div id="calibratedVA-bibtex" style="display:none;">
     <pre>@manual{calibratedVA,
   title = {calibratedVA: Locally calibrated cause specific mortality fractions using verbal autopsy data},
@@ -208,12 +235,12 @@ Email: abhidatta at jhu dot edu </br>
 
 
 <a onclick="toggle_visibility_wrap('calibratedVA-abstract')" href="#!">Description</a>
-    <div id="calibratedVA-abstract" style="display:none;">
-    <blockquote>calibatedVA is a package for local calibration of national and sub-national cause specific mortality (CSMF) estimates produced by algortihms based on verbal autopsy data. These computer coded verbal autopsy (CCVA) algorithms usually rely on non-local gold standard training data and can be inaccurate in a local context. calibratedVA uses the output of the CCVA algorithm and limited amount of local gold standard data to update the CSMF estimates using a fast Bayesian hierarchical model. calibratedVA also has an ensemble calibration option where outputs from multiple CCVA algorithms are used to produce an unified calibrated CSMF estimate. the package can also be used in other general contexts to calibrate any discrete classifier (or a set of classifiers) based on limited local labeled data.</blockquote>
-    </div>
-    
+	<div id="calibratedVA-abstract" style="display:none;">
+	<blockquote>calibatedVA is a package for local calibration of national and sub-national cause specific mortality (CSMF) estimates produced by algortihms based on verbal autopsy data. These computer coded verbal autopsy (CCVA) algorithms usually rely on non-local gold standard training data and can be inaccurate in a local context. calibratedVA uses the output of the CCVA algorithm and limited amount of local gold standard data to update the CSMF estimates using a fast Bayesian hierarchical model. calibratedVA also has an ensemble calibration option where outputs from multiple CCVA algorithms are used to produce an unified calibrated CSMF estimate. the package can also be used in other general contexts to calibrate any discrete classifier (or a set of classifiers) based on limited local labeled data.</blockquote>
+	</div>
+	
 
-    
+	
 
 </div>
 </li>
@@ -222,7 +249,7 @@ Neighbor Gaussian Processes</i>. 2017.</span>
 
 <div id="spnngp-materials">
 
-    <a onclick="toggle_visibility('spnngp-bibtex')" href="#!">Bibtex</a>
+	<a onclick="toggle_visibility('spnngp-bibtex')" href="#!">Bibtex</a>
     <div id="spnngp-bibtex" style="display:none;">
     <pre>@manual{spnngp,
   title = {spNNGP: Spatial Regression Models for Large Datasets using Nearest
@@ -237,13 +264,13 @@ Neighbor Gaussian Processes</i>. 2017.</span>
 
 
 <a onclick="toggle_visibility_wrap('spnngp-abstract')" href="#!">Description</a>
-    <div id="spnngp-abstract" style="display:none;">
-    <blockquote>spNNGP is a package for fully Bayesian analysis of massive spatial data. Spatial analysis of point process data is usually computationally expensive requiring memory and computations that are quadratic and cubic in the number of locations where data is observed. spNNGP implements a class of scalable Nearest Neighbor Gaussian Process models that uses memory and computations that are linear in the size of the data. 
+	<div id="spnngp-abstract" style="display:none;">
+	<blockquote>spNNGP is a package for fully Bayesian analysis of massive spatial data. Spatial analysis of point process data is usually computationally expensive requiring memory and computations that are quadratic and cubic in the number of locations where data is observed. spNNGP implements a class of scalable Nearest Neighbor Gaussian Process models that uses memory and computations that are linear in the size of the data. 
     spNNGP enables fast fully Bayesian inference of all parameters and proper uncertainty quantified predictions at new locations. An MCMC-free hybrid Bayesian conjugate NNGP is also included which is super fast even for spatial datasets with millions of locations.</blockquote>
-    </div>
-    
+	</div>
+	
 
-    
+	
 
 </div>
 </li></ul>
