@@ -60,8 +60,6 @@
       
       
         
-      
-        
           
         
       
@@ -71,11 +69,19 @@
       
         
           
+        
+      
         
       
         
           
             <a class="sidebar-nav-item" href="/research_old/">Research</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/research_old2/">Research</a>
           
         
       
@@ -105,7 +111,7 @@
       
         
           
-            <a class="sidebar-nav-item" href="/software/">Software</a>
+            <a class="sidebar-nav-item" href="/software/">Software and Data Products</a>
           
         
       
@@ -142,39 +148,109 @@ Email: abhidatta at jhu dot edu </br>
     <div class="content container">
       <div class="page">
   <h1 class="page-title">Research</h1>
-  <p> Dr. Datta’s research focuses on developing statistical and machine learning methods for geospatial data
-with applications to air pollution, forestry, ecology, infectious disease modeling, and on Bayesian
-hierarchical models for multi-source data with applications to global health. <!--Dr. Datta has led publications in esteemed statistical or scientific journals like Journal of the American
-Statistical Association (JASA), Annals of Statistics (AoS), Biometrika, Annals of Applied Statistics (AoAS),
-Biostatistics, Biometrics, and the Proceedings of the National Academy of Sciences (PNAS).  In
-2021, Dr. Datta was awarded the Young Statistical Scientist Award (YSSA) – a prestigious award
-by the International Indian Statistical Association (IISA) for early and mid career researchers..-->
+  <p>My statistical research is science-first and, thus, eclectic. I study, create, and apply a diverse array of statistical methods guided by the scientific problems I am working on, often in environmental health, global health, and public health policy. Across these areas, I develop statistical methods when existing tools are inadequate to address the scientific question, with an emphasis on methods that are both mathematically principled and practically useful. The different strands of research are unified by a common goal: to make statistical inference more reliable, scalable, and scientifically interpretable in complex public health applications. Details on some of my research topics are provided below.</p>
+
+<p><br /></p>
+
+<p>
+  <hlt style="color:#8c1d40;"> Spatial machine learning: </hlt>
+  <br />
+  Machine learning methods have been widely adopted for environmental and climate analysis. However, these data are characterized by dependence across space and time, and off the shelf use of machine learning for these datasets ignores this correlation. I have studied the performance of machine learning for geospatial data and shown that ignoring spatial correlation can lead to biased and inefficient inference. We have developed new spatial machine learning methods that retain the inferential strengths of spatial statistics. This includes methods that combine neural networks, random forests, graph neural networks, and Gaussian processes so that flexible prediction tools can account for spatial dependence rather than treating observations as independent.
+  <br /><small><a href="https://doi.org/10.1080/01621459.2024.2356293" target="_blank"> Neural networks for geospatial data. JASA </a></small>
+  <br /><small><a href="https://doi.org/10.1080/01621459.2021.1950003" target="_blank"> Random forests for spatially dependent data. JASA </a></small>
 </p>
-
-<p><br /></p>
-<hlt2> Geospatial AI methods and Environmental Health research: </hlt2>
-<p> Dr. Datta has been leading highly innovative and impactful
-research in geospatial AI methods (statistical modeling and machine learning algorithms) for analysis of large and complex environmental
-data. His work on Nearest Neighbor Gaussian Processes (NNGP) has become one of the most
-widely used methods for scalable analysis of massive geospatial data. The original NNGP paper
-led by Dr. Datta is one of the top-5 most cited papers published in the Journal of the American Statistical Association from 2016-2020. <!--Dr. Datta was awarded the 2021 Early
-Investigator Award by the American Statistical Association (ASA) Section on Statistics and the
-Environment (ENVR) for contributions to spatial big data methodology and their environmental
-applications. As principal investigator, Dr. Datta has been awarded an R01 grant by the National
-Institute of Environmental Health Sciences and an NSF grant for development of spatial methods.
---> </p>
 <p><br /></p>
 
-<p> Dr. Datta's recent research delves into studying the foundations of the emerging field of geoAI, which utilizes artificial intelligence (AI) methods for geospatial data analysis. Dr. Datta has pioneered some of the first theoretical studies in this area, demonstrating that the performance of off-the-shelf machine learning algorithms is adversely affected in geospatial analysis due to their lack of explicit geospatial information. Dr. Datta and his team have developed a novel class of geoAI algorithms (geospatial neural networks and random forests) with explicit geospatial awareness. These new methods integrate traditional statistical principles with machine learning, ensuring scalability and the ability to model complex relationships while accounting for geospatial correlations. </p>
+<p>
+  <hlt style="color:#8c1d40;"> Causal inference for environmental epidemiology: </hlt> 
+  <br />
+  I have been working on understanding and formalizing when population level exposure effects can be identified or consistently estimated in environmental epidemiology studies in the presence of unmeasured spatially structured confounders. This strand of work clarifies the limits of common adjustment methods and develops new theory for causal inference with spatially dependent exposures, outcomes, and confounders.
+  <br /><small><a href="https://doi.org/10.1093/biomet/asae070" target="_blank"> Consistency of GLS estimation under spatial confounding. Biometrika </a></small>
+  <br /><small><a href="https://arxiv.org/abs/2112.14946" target="_blank"> Nonparametric identification under spatial confounding. arXiv </a></small>
+  <br /><small><a href="https://arxiv.org/abs/2506.09267" target="_blank"> When is it possible to account for spatial confounding between Gaussian random fields? arXiv </a></small>
+  <br /><small><a href="https://doi.org/10.1093/aje/kwae171" target="_blank"> Did COVID 19 lockdowns impact air quality? Am. J. Epi. </a></small>
+</p>
 <p><br /></p>
 
-<hlt2> Global Health research: </hlt2>
-<p> Dr. Datta has been developing Bayesian methods to understand disease
-burden from multi-source data in many low and middle income countries (LMICS). He is currently leading a high impact global health project aimed to improve cause-specific mortality estimates for children and neonates. Dr. Datta has
-demonstrated that the estimates of mortality in LMICS, often derived from verbal autopsies, are
-highly biased and has developed Bayesian transfer learning methods for bias-correction of verbal
-autopsy. He has been recently awarded a grant PI grant by the Bill and Melinda Gates Foundation
-for broader application of the method to improve cause-specific mortality estimates globally. </p>
+<p>
+  <hlt style="color:#8c1d40;"> Quantification learning and prediction powered inference for global health: </hlt>
+  <br />
+  My global health research focuses on making valid inference from imperfect cause of death prediction systems. Working on child mortality estimation using verbal autopsy based cause of death data, I have developed general purpose methods that correct for classifier misclassification bias under label shift and combine large amounts of noisy predicted cause of death data with smaller amounts of high quality validation data. This work has contributed to United Nations child mortality estimation and related BMJ work on global cause specific mortality.
+  <br /><small><a href="https://doi.org/10.1093/biostatistics/kxaa001" target="_blank"> Model based correction of verbal autopsy misclassification bias. Biostatistics </a></small>
+  <br /><small><a href="https://doi.org/10.1080/01621459.2021.1909599" target="_blank"> Bias correction of probabilistic classifiers and theory of classifier bias correction under label shift. JASA </a></small>
+  <br /><small><a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-19/issue-2/Modeling-structure-and-country-specific-heterogeneity-in-misclassification-matrices-of-verbal/10.1214/24-AOAS2006.full" target="_blank"> Modeling heterogeneity in verbal autopsy misclassification matrices. Ann. Appl. Stat. </a></small>
+  <br /><small><a href="https://doi.org/10.1136/bmjgh-2025-021747" target="_blank"> Country specific estimates of verbal autopsy misclassification rates. BMJ Global Health </a></small>
+ <br /><small><a href="https://doi.org/10.4269/ajtmh.22-0367" target="_blank"> Bias-corrcted child and neonatal mortality estimates for Mozambique. Am. J. Trop. Med. </a></small>
+  <br /><small><a href="https://data.unicef.org/resources/levels-and-trends-in-child-mortality-2025/" target="_blank"> United Nations 2025 Child Mortality Estimates. Paper to appear in BMJ. </a></small>
+</p>
+<p><br /></p>
+
+<p>
+  <hlt style="color:#8c1d40;"> Variational inference: </hlt>
+  <br />
+  I have recently started using variational inference methods for Bayesian models where standard MCMC methods are computationally impractical or where modular uncertainty propagation is required. A recent focus is using universal distributional approximants such as normalizing flows in variational inference for cut Bayes, which propagates upstream uncertainty into downstream analyses without requiring access to the upstream data or allowing feedback from the downstream model to distort the upstream inference. This work has also quantified the approximation error of variational normalizing flow families.
+  <br /><small><a href="https://arxiv.org/abs/2510.10268" target="_blank"> Method and theory of variational normalizing flows for approximating cut Bayes posteriors. arXiv </a></small>
+  <br /><small><a href="https://arxiv.org/abs/2507.12251" target="_blank"> Fast variational Bayes for large spatial data. JCGS, to appear. arXiv </a></small>
+</p>
+<p><br /></p>
+
+<p>
+  <hlt style="color:#8c1d40;"> Geometry driven statistics for environmental mixtures: </hlt>
+  <br />
+  In environmental source apportionment, the scientific goal is to identify and quantify the sources of pollution in an area from multi pollutant concentration measurements collected over time. This is a classical unsupervised nonnegative matrix factorization problem where individual factors are generally not identifiable. I have recently started leveraging geometric ideas for this problem by viewing the observed data cloud as lying in a conical hull generated by latent source profiles. This perspective makes it possible to identify scientifically meaningful source attribution targets, even when the full factorization itself is not unique. The resulting methods estimate source attribution percentages that are invariant to scale ambiguities and grounded in population level quantities. These methods have been used in work on air pollution and coal dust exposure in Curtis Bay, Baltimore.
+  <br /><small><a href="https://arxiv.org/abs/2510.03616" target="_blank"> Identification in source apportionment using geometry. arXiv </a></small>
+  <br /><small><a href="https://arxiv.org/abs/2511.11833" target="_blank"> Geometric source apportionment of air pollution burden in Curtis Bay. arXiv </a></small>
+</p>
+<p><br /></p>
+
+<p>
+  <hlt style="color:#8c1d40;"> Statistical methods for air sensor data: </hlt>
+  <br />
+  I develop statistical methods for analyzing air pollution data from low cost sensor networks, where measurements are spatially dense and temporally resolved but often noisy, biased, and heterogeneous across sensor platforms. This work focuses on calibration, data fusion, spatial mapping, and detection of pollution spikes by combining low cost sensor data with regulatory monitor data and spatial statistical models. These methods are motivated by air quality monitoring in Baltimore and are designed to produce reliable, neighborhood scale pollution estimates that can support environmental health research, community engagement, and public facing data products.
+  <br /><small><a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-17/issue-4/A-dynamic-spatial-filtering-approach-to-mitigate-underestimation-bias-in/10.1214/23-AOAS1751.full" target="_blank"> A Gaussian process filter for mitigating underestimation bias in air sensor calibration. Ann. Appl. Stat. </a></small>
+  <br /><small><a href="https://doi.org/10.1002/env.70100" target="_blank"> Fusion and calibration of multiple air sensor networks using GP filter. Environmetrics </a></small>
+  <br /><small><a href="https://web.idies.jhu.edu/airquality/dashboard" target="_blank"> The Baltimore Air Quality Dashboard </a></small>
+</p>
+<p><br /></p>
+
+<p>
+  <hlt style="color:#8c1d40;"> Spatial graphical models: </hlt>
+  <br />
+  I also work on spatial graphical models for areal, lattice, and multivariate spatial data. These methods are designed for spatial dependence structures arising in disease mapping, air pollution modeling, and public health surveillance, where interpretability, computational scalability, and valid uncertainty quantification are all essential.
+  <br /><small><a href="https://doi.org/10.1214/19-BA1177" target="_blank"> Directed acyclic graph autoregression. Bayes An. </a></small>
+  <br /><small><a href="https://doi.org/10.1093/biomtc/ujae089" target="_blank"> Visibility graph based covariance functions for nonconvex spatial domains. Biometrics </a></small>
+  <br /><small><a href="https://doi.org/10.1093/biomet/asab061" target="_blank"> Graphical models with Gaussian processes as nodes. Biometrika </a></small>
+</p>
+<p><br /></p>
+
+<p>
+  <hlt style="color:#8c1d40;"> Infectious disease mapping: </hlt>
+  <br />
+  I have developed and applied statistical methods for infectious disease applications where public health decisions require combining incomplete surveillance data, spatial information, and multiple imperfect data sources. This work includes estimation of disease incidence and key population sizes relevant to HIV prevention, where direct enumeration is difficult because of stigma, criminalization, incomplete data, and geographic misalignment.
+  <br /><small><a href="https://doi.org/10.1038/s41591-025-03847-9" target="_blank"> Pan Africa cholera incidence mapping. Nature Medicine </a></small>
+  <br /><small><a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-14/issue-3/Size-estimation-of-key-populations-in-the-HIV-epidemic-in/10.1214/20-AOAS1327.full" target="_blank"> Incomplete and misaligned capture recapture. Ann. Appl. Stat. </a></small>
+</p>
+<p><br /></p>
+
+<p>
+  <hlt style="color:#8c1d40;"> Nearest neighbor Gaussian processes and scalable spatial computing: </hlt>
+  <br />
+  In my early research, I developed the nearest neighbor Gaussian process framework for scalable Gaussian process modeling. NNGP reduces the computational burden of traditional Gaussian process inference while preserving much of its modeling flexibility, and it has been widely used in environmental health, ecology, climate science, neuroimaging, forestry, and other fields.
+  <br /><small><a href="https://doi.org/10.1080/01621459.2015.1044091" target="_blank"> Nearest neighbor Gaussian process. JASA </a></small>
+  <br /><small><a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-10/issue-3/Hierarchical-Nearest-Neighbor-Gaussian-Process-Models-for-Large-Geostatistical-Datasets/10.1214/16-AOAS943.full" target="_blank"> NNGP for spatio temporal data. Ann. Appl. Stat. </a></small>
+  <br /><small><a href="https://doi.org/10.1080/10618600.2018.1537924" target="_blank"> Efficient algorithms for NNGP. JCGS </a></small>
+  <br /><small><a href="https://doi.org/10.5705/ss.202018.0005" target="_blank"> Multivariate NNGP. Stat. Sinica </a></small>
+</p>
+<p><br /></p>
+
+<p>
+  <hlt style="color:#8c1d40;"> Other statistical methods: </hlt>
+  <br />
+  I have also worked on a variety of other statistical problems, often motivated by applications where standard modeling assumptions are violated. A sampler is given below.
+  <br /><small><a href="https://doi.org/10.1214/21-EJS1877" target="_blank"> Theory of Gaussian process regression for distribution valued predictors. EJS </a></small>
+  <br /><small><a href="https://doi.org/10.1111/biom.13244" target="_blank"> Linear regression for compositional data without transformations. Biometrics </a></small>
+  <br /><small><a href="https://doi.org/10.1214/16-AOS1477" target="_blank"> High dimensional error in variables regression. Ann. Stat. </a></small>
+</p>
 
 </div>
     </div>
